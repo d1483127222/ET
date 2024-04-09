@@ -16,6 +16,7 @@ namespace ET.Server
             StartSceneConfig startSceneConfig = StartSceneConfigCategory.Instance.Get(root.Fiber.Id);
             root.AddComponent<NetComponent, IPEndPoint, NetworkProtocol>(startSceneConfig.InnerIPPort, NetworkProtocol.UDP);
 
+            root.AddComponent<DBManagerComponent>();
             await ETTask.CompletedTask;
         }
     }
