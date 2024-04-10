@@ -17,7 +17,13 @@ namespace ET.Client
                 return;
             }
             
-            root.GetComponent<PlayerComponent>().MyId = response.PlayerId;
+            //
+            
+            //root.GetComponent<PlayerComponent>().MyId = response.PlayerId;
+            //获取服务器列表
+            //C2R_GetServerInfos
+            
+            
             
             await EventSystem.Instance.PublishAsync(root, new LoginFinish());
         }

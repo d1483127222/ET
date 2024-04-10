@@ -14,8 +14,16 @@ namespace ET
         // 110000 - 200000是抛异常的错误
         // 200001以上不抛异常
 
-        public const int ERR_LoginInfoEmpty = 200002;//账号为空
+        public const int ERR_LoginInfoEmpty = 200001;//账号为空
 
-        public const int ERR_LoginPasswordError = 200003;//密码错误
+        public const int ERR_LoginPasswordError = 200002;//密码错误
+
+        public const int ERR_RequestRepeatedly = 200003;//重复请求
+
+        public const int ERR_AccountNameFormError = 200004;//账号格式错误
+
+        public const int ERR_PasswordFormError = 200005;//密码格式错误
+
+        public const int ERR_AccountInBlackListError = 200006;//在黑名单中
     }
 }
